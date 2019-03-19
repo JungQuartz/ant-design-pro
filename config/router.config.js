@@ -12,9 +12,6 @@ export default [
         name: 'register.result',
         component: './User/RegisterResult',
       },
-      {
-        component: '404',
-      },
     ],
   },
   // app
@@ -44,6 +41,20 @@ export default [
             path: '/dashboard/workplace',
             name: 'workplace',
             component: './Dashboard/Workplace',
+          },
+        ],
+      },
+      // dashboard
+      { path: '/', redirect: '/test/test' },
+      {
+        path: '/test',
+        name: 'test',
+        icon: 'test',
+        routes: [
+          {
+            path: '/test/test',
+            name: 'test',
+            component: './Test/Test',
           },
         ],
       },
